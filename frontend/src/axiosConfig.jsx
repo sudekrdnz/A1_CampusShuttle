@@ -1,9 +1,9 @@
-import axios from 'axios';
+  import axios from 'axios';
 
-const axiosInstance = axios.create({
-  // baseURL: 'http://localhost:5001', // local
-  baseURL: 'http://3.107.22.213:5001', // live
-  headers: { 'Content-Type': 'application/json' },
-});
+  const axiosInstance = axios.create({
+    // baseURL: 'http://localhost:5001', // local
+    baseURL: 'http://16.176.141.25:5001', // live
+    headers: { 'Content-Type': 'application/json' },
+  });
 
-export default axiosInstance;
+  export default axiosInstance;
