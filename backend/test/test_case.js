@@ -6,7 +6,7 @@ const app = require('../server');
 const connectDB = require('../config/db');
 const mongoose = require('mongoose');
 const sinon = require('sinon');
-const Task = require('../models/Task');
+const Task = require('../models/User');
 const { updateTask,getTasks,addTask,deleteTask } = require('../controllers/taskController');
 const { expect } = chai;
 
@@ -216,8 +216,6 @@ describe('GetTask Function Test', () => {
   });
 
 });
-
-
 
 describe('DeleteTask Function Test', () => {
 
