@@ -35,7 +35,7 @@ const TaskForm = ({ tasks, setTasks, editingTask, setEditingTask }) => {
       setEditingTask(null);
       setFormData({ title: '', description: '', deadline: '' });
     } catch (error) {
-      alert('Failed to save task.');
+      alert('Failed to save task: ' + error);
     }
   };
 
