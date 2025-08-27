@@ -39,7 +39,8 @@ jobs:
         echo "Secret 2 is: $JWT_SECRET"
         echo "Secret 3 is: $PORT"
       
-    - run: pm2 stop all 2>&1
+    - run: pm2 stop all
+      continue-on-error: true
 
     # Install dependencies for backend
     - name: Install Backend Dependencies
